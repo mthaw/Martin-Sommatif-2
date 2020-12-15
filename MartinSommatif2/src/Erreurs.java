@@ -21,7 +21,7 @@ public class Erreurs {
 	public static void main(String[] args) {
 		// Appeler la methode saluerAmi avec le nom "John".
 		Erreurs erreur = new Erreurs();//Creer un objet de la class erreurs
-		System.out.println(erreur.saluerAmi("John"));//Appeler la methode saluerAmi sur cet objet, avec le nom "John"
+		System.out.println(erreur.saluerAmi("John"));//Appeler la methode saluerAmi sur cet objet, avec le nom "John" et imprimer le resultat (message)
 	}
 
 	/**
