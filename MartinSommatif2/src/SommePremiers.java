@@ -14,7 +14,6 @@ public class SommePremiers {
 		for (int i = 0; i < tableau.length; i++) {
 			if (isPremier(tableau[i])) {
 				somme += tableau[i];
-				System.out.println("Prime");
 			}
 		}
 		return somme;
