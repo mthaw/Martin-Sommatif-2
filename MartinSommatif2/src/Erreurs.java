@@ -20,11 +20,16 @@
  */
 public class Erreurs {
 	public static void main(String[] args) {
+		//Appeler la methode saluerAmi avec le nom "John".
 		System.out.println(saluerAmi("John"));
 	}
-
+/**
+ * 
+ * @param nom, c'est le nom de la personne qu'on veut saluer. 
+ * @return le message pour saluer la personne qui est "Bonjour mon ami" suivi par le nom de la personne qu'on salue, separes par une espace
+ */
 	public static String saluerAmi(String nom) {
-		String message = "Bonjour mon ami " + nom;
-		return message;
+		String message = "Bonjour mon ami " + nom;//Creer le message pour saluer
+		return message;//Retourner le message
 	}
 }
