@@ -5,8 +5,6 @@
 * Ce tableau a 100 nombres entiers generes au hasard qui sont entre 0 et 99999 (inclusive).
 */
 
-import java.util.*;
-
 public class SommePremiers {
 /**
  * 
@@ -14,7 +12,7 @@ public class SommePremiers {
  * @return la somme des nombres premiers dans tableau
  */
 	public static int sommePremiers(int tableau[]) {
-		int somme = 0;//Creer la variable somme
+		int somme = 0;//Creer la variable somme, la somme des nombres premiers dans tableau
 		for (int i = 0; i < tableau.length; i++) {//Pour chaque valeur dans tableau
 			if (isPremier(tableau[i])) {//Si il est premier
 				somme += tableau[i];//Augmenter la somme par ce nombre premier
@@ -28,11 +26,11 @@ public class SommePremiers {
  * @return true, si valeur est un nombre premier et false sinon (valeur n'est pas un nombre premier)
  */
 	public static boolean isPremier(int valeur) {
-		if (valeur == 1) {//Si valeur est 1, il n'est pas premier (exception)
-			return false;
+		if (valeur == 1) {//Si valeur est 1, 
+			return false;//il n'est pas premier (exception)
 		}
-		for (int i = 2; i <= valeur / 2; i++) {//Verifier tous les facteurs jusqu'a un demi de valeur (=valeur/2)
-			if (valeur % i == 0) {//Si il est divisible par ce facteur i, alors 
+		for (int i = 2; i <= valeur / 2; i++) {//Verifier tous les facteurs de 2 jusqu'a un demi de valeur (=valeur/2)
+			if (valeur % i == 0) {//Si il est divisible par ce facteur i (donne un reste de 0), alors 
 				return false;//il n'est pas premier
 			}
 

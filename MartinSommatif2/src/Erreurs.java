@@ -2,7 +2,7 @@
 * @Auteur : Martin Thaw
 * @Date : Dec. 15, 2020
 * @Description : Programme avec des methodes permettant de manipuler des tableaux:
-* Exercise 1. Programme reecrite avec les 4 erreurs corriges (erreurs donnes ci-dessous)
+* Exercise 1. Programme, class Erreurs, reecrite avec les 4 erreurs corriges (erreurs donnes ci-dessous)
 */
 
 /*
