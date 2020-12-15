@@ -16,12 +16,12 @@
  * 
  * 4. La methode saluerAmi devrait retourner un String (comme specifie dans sa definition sur la ligne 20), mais elle ne le fait pas. Il faut retourner le message
  * 
- * 5. La methode saluerAmi n'est pas static. Il faut etre static pour etre appele dans le main (qui est static).
  */
 public class Erreurs {
 	public static void main(String[] args) {
 		// Appeler la methode saluerAmi avec le nom "John".
-		System.out.println(saluerAmi("John"));
+		Erreurs erreur = new Erreurs();//Creer un objet de la class erreurs
+		System.out.println(erreur.saluerAmi("John"));//Appeler la methode saluerAmi sur cet objet, avec le nom "John"
 	}
 
 	/**
@@ -30,7 +30,7 @@ public class Erreurs {
 	 * @return le message pour saluer la personne qui est "Bonjour mon ami" suivi
 	 *         par le nom de la personne qu'on salue, separes par une espace
 	 */
-	public static String saluerAmi(String nom) {
+	public String saluerAmi(String nom) {
 		String message = "Bonjour mon ami " + nom;// Creer le message pour saluer
 		return message;// Retourner le message
 	}
